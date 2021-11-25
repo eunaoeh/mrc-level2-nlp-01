@@ -36,15 +36,17 @@
             </ul>
         </li>
   </ol>
-</details>
+</details
+
+[>> MRC 프로젝트 후기와 방법론 정리](https://chill-wavelength-07f.notion.site/ODQA-MRC-7554664da36740e5b1265c10ef20fe6c)
+
 
 # 프로젝트 소개
-<br>
+- ODQA MRC란 Open Domain Question Answering Machine Reading Comprehension의 약자로 Query가 들어오면 Wiki 데이터셋으로부터 정답을 도출하는 것이 목표입니다.
 
-- 우리는 **궁금한 것들이 생겼을 때**, 아주 당연하게 검색엔진을 활용하여 검색을 합니다. 이런 검색엔진은 최근 MRC (기계독해) 기술을 활용하며 매일 발전하고 있습니다.
-- 본 대회에서는 우리가 당연하게 활용하던 검색엔진, 그것과 유사한 형태의 시스템을 만들어 볼 것입니다.
 
-<br>
+
+
 <div align="center">
     <img src="https://i.imgur.com/XE3H9Bp.png" />
 </div>
@@ -88,6 +90,7 @@ sigopt config
 ```bash=
 sh install/elasticsearch/install.sh
 ```
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -168,4 +171,3 @@ python main.py --config-name inf_test
 
 - 모델과 Retrieval로 수행된 데이터셋을 불러와서 inference를 시행합니다.
 - nbest_predictions와 predictions를 출력하며 앙상블에 이용할 수 있습니다.
-
